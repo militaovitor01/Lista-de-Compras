@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Numans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-primaria: #9DBDFF;
+    --cor-primaria-forte:#7695FF;
+    --cor-fundo: linear-gradient(180deg, #000000 0%, #26327F 100%);
+    --preto: #000000;
+    --branco: #FFFFFF;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+    --fonte-terciaria: 'Numans', sans-serif;
+}
+
+body {
+    background: var(--cor-fundo);
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    background-color: var(--branco);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 64px;
+    padding:56px;
+    width: 440px;
+}
+
+/* Estilos da primeira section*/
+.adicionar-itens {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em;
+}
+
+.formulario__entrada {
+    border: 1px solid var(--preto);
+    border-radius: 24px;
+    padding: 1em 0.5em;
+    width: 160%;
+}
+
+.formulario__entrada::placeholder {
+    font-family: var(--fonte-secundaria);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.formulario__botao {
+    background-color: var(--cor-primaria);
+    border: none;
+    border-radius: 24px;
+    color: var(--branco);
+    cursor: pointer;
+    font-size: 18px;
+    font-family: var(--fonte-terciaria);
+    margin-top: 0.5em;
+    padding: 0.5em 1em;
+}
+
+/* Estilos da segunda section */
+.titulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--cor-primaria-forte);
+    text-align: center;
+}
+
+hr {
+    border: none;
+    border-bottom:3px dotted var(--cor-primaria);
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+p {
+    font-family: var(--fonte-terciaria);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.lista {
+    list-style-type: none;
+    width: 100%;
+}
+
+.lista__item__adicionar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lista__item__nome-compra {
+    display: flex;
+}
+
+.lista__item__data {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.checkbox-input {
+    display: none;
+}
+
+.checkbox-customizado {
+    width: 20px;
+    height: 20px;
+    background-color: var(--branco);
+    border: 1px solid var(--preto);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 0.4em;
+}
+
+.checked {
+    background-color: var(--preto);
+    position: relative;
+}
+
+.checked::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 14px;
+    top: -10%;
+    left: 30%;
+
+    border-top: 2px solid var(--branco);
+    border-left: 2px solid var(--branco);
+    transform: rotate(-140deg);
+}
+
+.botao-acao { 
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
