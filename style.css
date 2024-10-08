@@ -154,3 +154,7 @@ p {
     border: none;
     cursor: pointer;
 }
+
+.texto-data {
+    font-size: 0.8em;
+}
